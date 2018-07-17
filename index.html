@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div ng-controller="myctr">
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Salary</th>
+                <th>Company</th>
+            </tr>
+            <tr ng-repeat="user in users">
+                <td>{{user.name}}</td>
+                <td>{{user.age}}</td>
+                <td>{{user.salary}}</td>
+                <td>{{user.company}}</td>
+            </tr>
+        </table>
+    </div>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
